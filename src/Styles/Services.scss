@@ -1,0 +1,100 @@
+/* Services.scss */
+#services {
+    background: linear-gradient(90deg, rgba(243, 0, 255, 1) 0%, rgba(22, 35, 143, 1) 38%, rgba(0, 0, 0, 1) 79%);
+}
+.services {
+    
+    max-width: 800px;
+    max-height: min-content;
+    margin: 0 auto;
+    padding: 20px;
+    
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #f0f0f0;
+    }
+  
+    .slider {
+      margin-top: 20px;
+      position: relative;
+  
+      .slick-list {
+        overflow: hidden; /* Hide overflow */
+        margin: 0 -15px; /* Adjust margin for smoother sliding */
+      }
+  
+      .slick-slide {
+        padding: 0 15px; /* Padding between slides */
+        text-align: center;
+  
+        img {
+          max-width: 100%;
+          height: 50%;
+          border-radius: 20px;
+        }
+  
+        h3 {
+          margin-top: 20px;
+          font-size: 1.5rem;
+          color: #ffffff;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #ffffff;
+          line-height: 1.5;
+        }
+      }
+  
+      /* Slider dots style */
+      .slick-dots {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+  
+        li {
+          display: inline-block;
+          margin: 0 5px;
+  
+          button {
+            font-size: 0; /* Hide dot button text */
+            width: 10px;
+            height: 10px;
+            border: none;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+  
+          &.slick-active button {
+            background-color: #555; /* Active dot color */
+          }
+        }
+      }
+    }
+  
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.8rem;
+      }
+  
+      .slider {
+        .slick-slide {
+          h3 {
+            font-size: 1.3rem;
+          }
+  
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  

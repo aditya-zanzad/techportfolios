@@ -1,0 +1,50 @@
+/* Apply Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Global Reset and Settings */
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Styling */
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 10px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the thumb */
+    border-radius: 5px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
+
+/* Mozilla Firefox */
+/* You can add more styling for Firefox if needed */
+/* For example: */
+/* scrollbar-width: thin; */
+/* scrollbar-color: #888 #f1f1f1; */
+
+/* Hide scrollbar for all browsers */
+/* Note: This is just a fallback and may not work consistently across all browsers */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Scrollbar hidden on Firefox */
+/* Again, this is a fallback and may not work consistently */
+* {
+    scrollbar-width: none;
+}
